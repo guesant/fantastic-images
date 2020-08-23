@@ -1,3 +1,4 @@
+export * as model from './model';
 export * as canvas from './canvas';
 export { default as buildObject } from './build-object';
 export { default as buildStatic } from './build-static';
