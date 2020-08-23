@@ -2,6 +2,8 @@
   "include": ["src", "types"],
   "compilerOptions": {
     "module": "esnext",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
     "lib": ["dom", "esnext"],
     "importHelpers": true,
     "declaration": true,
@@ -13,11 +15,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
-    "baseUrl": "./",
-    "paths": {
-      "*": ["src/*", "node_modules/*"]
-    },
-    "jsx": "react",
     "esModuleInterop": true
   }
 }
