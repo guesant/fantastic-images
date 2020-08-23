@@ -1,0 +1,13 @@
+{
+  "name": "@fantastic-images/types",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo ok"
+  },
+  "author": "Gabriel Rodrigues",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
+}
