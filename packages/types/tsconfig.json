@@ -1,5 +1,6 @@
 {
-  "include": ["types"],
+  "include": ["src"],
+  "exclude": [],
   "compilerOptions": {
     "module": "esnext",
     "skipLibCheck": true,
@@ -8,7 +9,7 @@
     "importHelpers": true,
     "declaration": true,
     "sourceMap": true,
-    "rootDir": "./types",
+    "rootDir": "src",
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
