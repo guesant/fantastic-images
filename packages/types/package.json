@@ -6,5 +6,8 @@
     "test": "echo ok"
   },
   "author": "Gabriel Rodrigues",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
 }
