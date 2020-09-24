@@ -8,7 +8,7 @@ const canvasByDom = ({ fabric }: { fabric: any }) => ({
 }) => ({ wrapper, id }: { wrapper: HTMLElement; id: string }) => (
   template: Template
 ): FabricTypes.Canvas => {
-  Array.from(wrapper.children || []).forEach(child => child.remove());
+  Array.from(wrapper.children || []).forEach((child) => child.remove());
   const domcanvas = document.createElement('canvas');
   domcanvas.id = id;
   domcanvas.width = Math.max(template.model.sketch.width, 0);

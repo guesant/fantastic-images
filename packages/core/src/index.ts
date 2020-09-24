@@ -1,1 +1,1 @@
-export * as fabric from './fabric'
+export * as fabric from './fabric';
