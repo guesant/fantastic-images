@@ -1,1 +1,1 @@
-export * as getCanvas from './get-canvas'
+export * as getCanvas from './get-canvas';
