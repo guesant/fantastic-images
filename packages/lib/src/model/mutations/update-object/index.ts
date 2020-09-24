@@ -1,4 +1,5 @@
-import { Template, TemplateObject } from '@fantastic-images/types';
+import { Template } from '@fantastic-images/types/src/Template';
+import { TemplateObject } from '@fantastic-images/types/src/TemplateObject';
 
 const UPDATE_OBJECT = (idx: number, updated: TemplateObject) => (
   template: Template
