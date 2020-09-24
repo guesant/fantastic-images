@@ -6,7 +6,7 @@ const buildObject = ({ fabric }: { fabric: any }) => ({
 }: {
   object: FabricTypes.Object;
 }): Promise<SupportedObjects> =>
-  new Promise(resolve => {
+  new Promise((resolve) => {
     switch (object.type) {
       case 'image':
         return fabric.Image.fromObject(object, resolve);

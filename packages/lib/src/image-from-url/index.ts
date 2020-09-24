@@ -4,7 +4,7 @@ const imageFromURL = ({ fabric }: { fabric: any }) => (
   url: string,
   options: { [key: string]: any } = {}
 ): Promise<FabricTypes.Image> =>
-  new Promise(resolve => {
+  new Promise((resolve) => {
     fabric.Image.fromURL(url, resolve, options);
   });
 
