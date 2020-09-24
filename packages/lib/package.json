@@ -11,14 +11,16 @@
     "node": ">=10"
   },
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build",
-    "test": "tsdx test",
-    "lint": "tsdx lint src"
+    "clean": "rm -rf dist",
+    "start": "tsc -p tsconfig.json --declaration --watch",
+    "build": "tsc -p tsconfig.json --declaration",
+    "test": "jest src",
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx --fix",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint src"
+      "pre-commit": "npm run lint && npm run format"
     }
   },
   "prettier": {
@@ -29,13 +31,21 @@
   },
   "name": "@fantastic-images/lib",
   "author": "Gabriel Rodrigues",
-  "module": "dist/lib.esm.js",
+  "module": "dist/index.js",
   "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-typescript": "^7.10.4",
     "@types/fabric": "^3.6.8",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.9.0",
     "husky": "^4.2.5",
-    "tsdx": "^0.13.3",
+    "jest": "^26.4.2",
+    "prettier": "^2.1.2",
     "tslib": "^2.0.1",
-    "typescript": "^4.0.2"
+    "typescript": "^4.0.3"
   },
   "dependencies": {
     "@fantastic-images/types": "file:../types"
