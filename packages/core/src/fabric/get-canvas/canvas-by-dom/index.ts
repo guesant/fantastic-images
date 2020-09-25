@@ -1,7 +1,7 @@
-import { fabric as FabricTypes } from 'fabric';
 import { Template } from '@fantastic-images/types';
+import { fabric as FabricTypes } from 'fabric';
 
-const canvasByDom = ({ fabric }: { fabric: any }) => ({
+export const canvasByDom = ({ fabric }: { fabric: any }) => ({
   document,
 }: {
   document: Document;
@@ -16,5 +16,3 @@ const canvasByDom = ({ fabric }: { fabric: any }) => ({
   wrapper.append(domcanvas);
   return new fabric.Canvas(id);
 };
-
-export default canvasByDom;

@@ -1,6 +1,6 @@
-import buildObject from '@fantastic-images/lib/dist/build-object';
-import buildStatic from '@fantastic-images/lib/dist/build-static';
-import removeAllObjects from '@fantastic-images/lib/dist/canvas/remove-all-objects';
+import { buildObject } from '@fantastic-images/lib/dist/build-object';
+import { buildStatic } from '@fantastic-images/lib/dist/build-static';
+import { removeAllObjects } from '@fantastic-images/lib/dist/canvas/remove-all-objects';
 import {
   getStaticBack,
   getStaticFront,
@@ -8,7 +8,7 @@ import {
 import { Template } from '@fantastic-images/types';
 import { Canvas } from 'fabric/fabric-impl';
 
-const renderTemplate = ({ fabric }: { fabric: any }) => ({
+export const renderTemplate = ({ fabric }: { fabric: any }) => ({
   canvas,
 }: {
   canvas: Canvas;
@@ -37,5 +37,3 @@ const renderTemplate = ({ fabric }: { fabric: any }) => ({
 
   canvas.requestRenderAll();
 };
-
-export default renderTemplate;
