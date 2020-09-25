@@ -1,5 +1,5 @@
 import { Template } from '@fantastic-images/types';
-import { fabric as FabricTypes } from 'fabric';
+import { Canvas } from 'fabric/fabric-impl';
 
 export const canvasByDom = ({ fabric }: { fabric: any }) => ({
   document,
@@ -7,7 +7,7 @@ export const canvasByDom = ({ fabric }: { fabric: any }) => ({
   document: Document;
 }) => ({ wrapper, id }: { wrapper: HTMLElement; id: string }) => (
   template: Template
-): FabricTypes.Canvas => {
+): Canvas => {
   Array.from(wrapper.children || []).forEach((child) => child.remove());
   const domcanvas = document.createElement('canvas');
   domcanvas.id = id;

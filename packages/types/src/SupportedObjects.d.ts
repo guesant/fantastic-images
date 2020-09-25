@@ -1,3 +1,3 @@
-import { fabric as FabricTypes } from 'fabric';
+import { Image, Textbox } from "fabric/fabric-impl";
 
-export type SupportedObjects = FabricTypes.Image | FabricTypes.Textbox;
+export type SupportedObjects = Image | Textbox;
