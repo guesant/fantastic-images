@@ -1,4 +1,4 @@
-import ADD_STATIC_IMAGE from '../add-static-image';
+import { ADD_STATIC_IMAGE } from '../add-static-image';
 
 test('Should add static image to template', () => {
   expect(

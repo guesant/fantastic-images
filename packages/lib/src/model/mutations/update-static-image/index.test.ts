@@ -1,4 +1,4 @@
-import UPDATE_STATIC_IMAGE from '../update-static-image';
+import { UPDATE_STATIC_IMAGE } from '../update-static-image';
 
 test('Update static image of template based on idx', () => {
   expect(

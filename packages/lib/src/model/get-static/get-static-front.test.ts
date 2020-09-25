@@ -1,4 +1,4 @@
-import getStaticFront from './get-static-front';
+import { getStaticFront } from './get-static-front';
 
 test('Should only return array with #position equals to "front"', () => {
   const frontImages = getStaticFront([

@@ -3,7 +3,7 @@ import { Template } from '@fantastic-images/types';
 const willBeRemoved = (removeList: number[] | number) => (idx: number) =>
   (Array.isArray(removeList) ? removeList : [removeList]).includes(idx);
 
-const REMOVE_OBJECT = ({ idx }: { idx: number[] | number }) => (
+export const REMOVE_OBJECT = ({ idx }: { idx: number[] | number }) => (
   template: Template
 ): Template => {
   const { model } = template;
@@ -21,5 +21,3 @@ const REMOVE_OBJECT = ({ idx }: { idx: number[] | number }) => (
     },
   };
 };
-
-export default REMOVE_OBJECT;

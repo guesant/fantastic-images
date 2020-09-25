@@ -1,7 +1,7 @@
 import { Template } from '@fantastic-images/types/src/Template';
 import { TemplateObject } from '@fantastic-images/types/src/TemplateObject';
 
-const UPDATE_OBJECT = (idx: number, updated: TemplateObject) => (
+export const UPDATE_OBJECT = (idx: number, updated: TemplateObject) => (
   template: Template
 ): Template => {
   const { model } = template;
@@ -20,5 +20,3 @@ const UPDATE_OBJECT = (idx: number, updated: TemplateObject) => (
     },
   };
 };
-
-export default UPDATE_OBJECT;

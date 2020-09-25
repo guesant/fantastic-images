@@ -1,4 +1,4 @@
-import REMOVE_STATIC_IMAGE from '../remove-static-image';
+import { REMOVE_STATIC_IMAGE } from '../remove-static-image';
 
 test('Remove static images from template based on number[]', () => {
   expect(

@@ -1,6 +1,6 @@
 import { Template, TemplateStaticImage } from '@fantastic-images/types';
 
-const ADD_STATIC_IMAGE = ({
+export const ADD_STATIC_IMAGE = ({
   staticImages,
 }: {
   staticImages: TemplateStaticImage[];
@@ -11,5 +11,3 @@ const ADD_STATIC_IMAGE = ({
     staticImages: [...template.model.staticImages, ...staticImages],
   },
 });
-
-export default ADD_STATIC_IMAGE;

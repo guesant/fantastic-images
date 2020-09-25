@@ -1,5 +1,5 @@
 export * as model from './model';
 export * as canvas from './canvas';
-export { default as buildObject } from './build-object';
-export { default as buildStatic } from './build-static';
-export { default as imageFromURL } from './image-from-url';
+export * from './build-object';
+export * from './build-static';
+export * from './image-from-url';
