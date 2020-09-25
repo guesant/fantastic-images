@@ -1,8 +1,8 @@
-import { fabric as FabricTypes } from 'fabric';
 import { Template, TemplateStaticImage } from '@fantastic-images/types';
-import imageFromURL from '../image-from-url';
+import { fabric as FabricTypes } from 'fabric';
+import { imageFromURL } from '../image-from-url';
 
-const buildStatic = ({ fabric }: { fabric: any }) => (
+export const buildStatic = ({ fabric }: { fabric: any }) => (
   template: Template
 ) => async ({
   url,
@@ -21,5 +21,3 @@ const buildStatic = ({ fabric }: { fabric: any }) => (
   img.set('selectable', false);
   return img;
 };
-
-export default buildStatic;

@@ -1,6 +1,6 @@
 import { Template } from '@fantastic-images/types';
 
-const REMOVE_STATIC_IMAGE = ({ idx }: { idx: number[] }) => (
+export const REMOVE_STATIC_IMAGE = ({ idx }: { idx: number[] }) => (
   template: Template
 ): Template => {
   const { model } = template;
@@ -15,5 +15,3 @@ const REMOVE_STATIC_IMAGE = ({ idx }: { idx: number[] }) => (
     },
   };
 };
-
-export default REMOVE_STATIC_IMAGE;

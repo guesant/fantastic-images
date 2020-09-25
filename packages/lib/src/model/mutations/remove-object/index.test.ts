@@ -1,4 +1,4 @@
-import REMOVE_OBJECT from '../remove-object';
+import { REMOVE_OBJECT } from '../remove-object';
 
 test('Remove objects from template based on number[]', () => {
   expect(

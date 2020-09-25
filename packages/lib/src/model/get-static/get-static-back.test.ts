@@ -1,4 +1,4 @@
-import getStaticBack from './get-static-back';
+import { getStaticBack } from './get-static-back';
 
 test('Should only return array with #position equals to "back"', () => {
   const backImages = getStaticBack([

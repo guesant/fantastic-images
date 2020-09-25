@@ -1,1 +1,1 @@
-export { default as removeAllObjects } from './remove-all-objects';
+export * from './remove-all-objects';

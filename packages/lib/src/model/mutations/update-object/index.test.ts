@@ -1,4 +1,4 @@
-import UPDATE_OBJECT from '../update-object';
+import { UPDATE_OBJECT } from '../update-object';
 
 test('Update object of template based on idx', () => {
   expect(

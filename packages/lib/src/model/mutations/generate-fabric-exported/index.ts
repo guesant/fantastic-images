@@ -1,6 +1,6 @@
 import { Template, TemplateObject } from '@fantastic-images/types';
 
-const GENERATE_FABRIC_EXPORTED = ({
+export const GENERATE_FABRIC_EXPORTED = ({
   objects,
 }: {
   objects: TemplateObject[];
@@ -14,5 +14,3 @@ const GENERATE_FABRIC_EXPORTED = ({
     },
   },
 });
-
-export default GENERATE_FABRIC_EXPORTED;

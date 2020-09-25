@@ -1,4 +1,4 @@
-import ADD_OBJECT from '../add-object';
+import { ADD_OBJECT } from '../add-object';
 
 test('Should add object to template', () => {
   expect(

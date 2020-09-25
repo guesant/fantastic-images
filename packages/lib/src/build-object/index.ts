@@ -1,7 +1,7 @@
-import { fabric as FabricTypes } from 'fabric';
 import { SupportedObjects } from '@fantastic-images/types';
+import { fabric as FabricTypes } from 'fabric';
 
-const buildObject = ({ fabric }: { fabric: any }) => ({
+export const buildObject = ({ fabric }: { fabric: any }) => ({
   object,
 }: {
   object: FabricTypes.Object;
@@ -16,5 +16,3 @@ const buildObject = ({ fabric }: { fabric: any }) => ({
         return new fabric.Object() as FabricTypes.Object;
     }
   });
-
-export default buildObject;

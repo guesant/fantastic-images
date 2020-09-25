@@ -1,4 +1,4 @@
-import GENERATE_FABRIC_EXPORTED from '../generate-fabric-exported';
+import { GENERATE_FABRIC_EXPORTED } from '../generate-fabric-exported';
 
 test('Add objects template#fabricExported', () => {
   expect(

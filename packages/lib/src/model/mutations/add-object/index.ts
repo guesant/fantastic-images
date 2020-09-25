@@ -1,6 +1,6 @@
 import { Template, TemplateObject } from '@fantastic-images/types';
 
-const ADD_OBJECT = ({ object }: { object: TemplateObject }) => (
+export const ADD_OBJECT = ({ object }: { object: TemplateObject }) => (
   template: Template
 ): Template => ({
   ...template,
@@ -12,5 +12,3 @@ const ADD_OBJECT = ({ object }: { object: TemplateObject }) => (
     },
   },
 });
-
-export default ADD_OBJECT;
