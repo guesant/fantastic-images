@@ -1,9 +1,5 @@
-import { fabric as FabricTypes } from 'fabric';
+import { Canvas } from 'fabric/fabric-impl';
 
-export const removeAllObjects = ({
-  canvas,
-}: {
-  canvas: FabricTypes.Canvas;
-}) => {
+export const removeAllObjects = ({ canvas }: { canvas: Canvas }) => {
   canvas.getObjects().forEach((obj) => canvas.remove(obj));
 };

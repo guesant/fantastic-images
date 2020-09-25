@@ -1,10 +1,10 @@
 import { SupportedObjects } from '@fantastic-images/types';
-import { fabric as FabricTypes } from 'fabric';
+import { Object } from 'fabric/fabric-impl';
 
 export const buildObject = ({ fabric }: { fabric: any }) => ({
   object,
 }: {
-  object: FabricTypes.Object;
+  object: Object;
 }): Promise<SupportedObjects> =>
   new Promise((resolve) => {
     switch (object.type) {
@@ -13,6 +13,6 @@ export const buildObject = ({ fabric }: { fabric: any }) => ({
       case 'textbox':
         return fabric.Textbox.fromObject(object, resolve);
       default:
-        return new fabric.Object() as FabricTypes.Object;
+        return new fabric.Object() as Object;
     }
   });

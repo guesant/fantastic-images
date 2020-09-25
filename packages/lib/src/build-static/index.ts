@@ -1,14 +1,10 @@
 import { Template, TemplateStaticImage } from '@fantastic-images/types';
-import { fabric as FabricTypes } from 'fabric';
+import { Image } from 'fabric/fabric-impl';
 import { imageFromURL } from '../image-from-url';
 
 export const buildStatic = ({ fabric }: { fabric: any }) => (
   template: Template
-) => async ({
-  url,
-}: {
-  url: TemplateStaticImage['url'];
-}): Promise<FabricTypes.Image> => {
+) => async ({ url }: { url: TemplateStaticImage['url'] }): Promise<Image> => {
   const img = await imageFromURL({ fabric })(url);
   if (!img) return img;
   const {
