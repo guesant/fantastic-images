@@ -1,0 +1,19 @@
+devDependencies:
+  '@types/fabric': 3.6.8
+  typescript: 4.0.3
+lockfileVersion: 5.1
+packages:
+  /@types/fabric/3.6.8:
+    dev: true
+    resolution:
+      integrity: sha512-EqRgmWXQ0Hh9JKH8M0KyoeFLBt1TuQ88cLICynd8xXWM052mINp1ijdfvFY/jCN5QMI6ctv2gbI1kBkDFETSSQ==
+  /typescript/4.0.3:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
+specifiers:
+  '@types/fabric': ^3.6.8
+  typescript: ^4.0.2
