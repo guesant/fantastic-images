@@ -49,6 +49,6 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "@fantastic-images/lib": "file:../lib"
+    "@fantastic-images/lib": "link:../lib"
   }
 }

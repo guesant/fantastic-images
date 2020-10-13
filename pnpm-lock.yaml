@@ -23,7 +23,7 @@ importers:
       '@babel/core': ^7.11.6
       '@babel/preset-env': ^7.11.5
       '@babel/preset-typescript': ^7.10.4
-      '@fantastic-images/lib': 'file:../lib'
+      '@fantastic-images/lib': 'link:../lib'
       '@fantastic-images/types': 'file:../types'
       '@types/fabric': ^3.6.8
       '@typescript-eslint/eslint-plugin': ^4.2.0
