@@ -12,14 +12,16 @@ export const renderTemplate = ({ fabric }: { fabric: any }) => ({
   canvas,
 }: {
   canvas: Canvas;
-}) => async (template: Template): Promise<void> => {
+}) => async (
+  template: Template,
+  { clearCanvas = true }: { clearCanvas?: boolean } = {}
+): Promise<void> => {
   const { model } = template;
   const { staticImages, fabricExported } = model;
   const _buildStatic = buildStatic({ fabric });
   const __buildStatic = _buildStatic(template);
   const _buildObject = buildObject({ fabric });
-  removeAllObjects({ canvas });
-
+  clearCanvas && removeAllObjects({ canvas });
   const getBack = () =>
     getStaticBack(staticImages).map(({ url }) => __buildStatic({ url }));
   const getFront = () =>
