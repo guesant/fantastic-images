@@ -7,6 +7,9 @@
   "engines": {
     "node": ">=10"
   },
+  "dependencies": {
+    "yup": "^0.32.8"
+  },
   "devDependencies": {
     "@types/fabric": "^4.2.0",
     "@typescript-eslint/eslint-plugin": "^4.9.1",
@@ -21,9 +24,5 @@
     "clean": "rm -rf lib",
     "build": "pnpm run clean && tsc -p . --declaration",
     "prepare": "pnpm run build"
-  },
-  "dependencies": {
-    "immer": "^8.0.0",
-    "yup": "^0.32.8"
   }
 }
