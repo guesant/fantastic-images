@@ -1,2 +1,3 @@
 # fantastic-images
-Template-based image generator tool.
+
+Ferramenta para a geração de imagens.
