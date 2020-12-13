@@ -19,7 +19,6 @@ importers:
       "@typescript-eslint/eslint-plugin": 4.9.1_eslint@5.16.0+typescript@4.1.3
       eslint: 5.16.0
       eslint-config-airbnb-base: 14.2.1_eslint@5.16.0
-      ts-toolbelt: 8.0.7
       tslib: 2.0.3
       typescript: 4.1.3
     specifiers:
@@ -30,7 +29,6 @@ importers:
       eslint-config-airbnb-base: ^14.2.1
       lodash.memoize: ^4.1.2
       nanoid: ^3.1.20
-      ts-toolbelt: ^8.0.7
       tslib: ^2.0.3
       typescript: ^4.1.2
       yup: ^0.32.8
@@ -1696,10 +1694,6 @@ packages:
     dev: false
     resolution:
       integrity: sha1-riF2gXXRVZ1IvvNUILL0li8JwzA=
-  /ts-toolbelt/8.0.7:
-    dev: true
-    resolution:
-      integrity: sha512-KICHyKxc5Nu34kyoODrEe2+zvuQQaubTJz7pnC5RQ19TH/Jged1xv+h8LBrouaSD310m75oAljYs59LNHkLDkQ==
   /tslib/1.14.1:
     dev: true
     resolution:
