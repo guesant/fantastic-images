@@ -1,5 +1,5 @@
 import { ITemplate } from "../../types/ITemplate";
-import { isValidTemplate } from "./isValidTempalte";
+import { isValidTemplate } from "./isValidTemplate";
 import { TemplateSchema } from "./TemplateSchema";
 
 export const parseTemplate = (template: ITemplate | any) => {

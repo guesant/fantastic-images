@@ -1,3 +1,3 @@
 export * from "./parseTemplate";
-export * from "./isValidTempalte";
+export * from "./isValidTemplate";
 export * from "./TemplateSchema";
