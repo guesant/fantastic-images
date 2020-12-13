@@ -1,6 +1,6 @@
 # fantastic-images
 
-Ferramenta para a geração de imagens.
+Ferramenta para gerar imagens.
 
 ## Exemplos
 
