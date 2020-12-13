@@ -55,3 +55,9 @@ await renderTemplate(fabric)(canvas)(template);
 ```
 
 </details>
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2020, Gabriel Rodrigues
