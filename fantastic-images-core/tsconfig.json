@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "lib": ["ESNext"],
+    "lib": ["DOM", "ESNext"],
     "declaration": true,
     "outDir": "./lib",
     "rootDir": "./src",
