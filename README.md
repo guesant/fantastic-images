@@ -35,7 +35,7 @@ isValidTemplate(tempalte);
 import { fabric } from "fabric";
 import { canvasByDom } from "@fantastic-images/core/lib/fabric/canvas";
 
-const template = /*...*/;
+const template = {};
 const wrapper = document.getElementById("wrapper");
 const canvas = canvasByDom(fabric)(window.document)(wrapper)(template);
 ```
@@ -49,8 +49,8 @@ const canvas = canvasByDom(fabric)(window.document)(wrapper)(template);
 import { fabric } from "fabric";
 import { renderTemplate } from "@fantastic-images/core/lib/fabric/canvas";
 
-const template = /*...*/;
-const canvas = /*...*/;
+const template = {};
+const canvas = canvasByDom();
 await renderTemplate(fabric)(canvas)(template);
 ```
 
