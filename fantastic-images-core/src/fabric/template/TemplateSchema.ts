@@ -5,15 +5,13 @@ export const TemplateSchema: ObjectSchema<any> = object()
     model: object()
       .shape({
         sketch: object()
-          .shape({ width: number().min(0), height: number().min(0) })
+          .shape({
+            width: number().min(0).default(0),
+            height: number().min(0).default(0),
+          })
           .default(() => ({ width: 0, height: 0 })),
         staticImages: array()
-          .of(
-            object().shape({
-              url: string(),
-              position: string(),
-            })
-          )
+          .of(object().shape({ url: string(), position: string() }))
           .default(() => []),
         fabricExported: object()
           .shape({
