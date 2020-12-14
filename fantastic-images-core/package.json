@@ -26,7 +26,8 @@
     "dev": "pnpm run dev:watch",
     "dev:watch": "tsc -p . --declaration --watch",
     "clean": "rm -rf lib",
-    "build": "pnpm run clean && tsc -p . --declaration",
+    "prod:build": "tsc -p . --declaration",
+    "build": "pnpm run clean && pnpm run prod:build",
     "prepare": "pnpm run build"
   }
 }
