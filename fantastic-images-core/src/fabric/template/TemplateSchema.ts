@@ -1,6 +1,6 @@
-import { array, number, object, string } from "yup";
+import { array, number, object, ObjectSchema, string } from "yup";
 
-export const TemplateSchema = object()
+export const TemplateSchema: ObjectSchema<any> = object()
   .shape({
     model: object()
       .shape({
