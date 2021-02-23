@@ -1,1 +1,1 @@
-export * as fabric from "./fabric";
+export * from "./fabric";
