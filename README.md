@@ -2,7 +2,7 @@
 
 Ferramenta opinada para gerar imagens.
 
-## Instalaçao
+## Instalação
 
 ```sh
 npm i @fantastic-images/core fabric@4.2.0
