@@ -1,6 +1,12 @@
 # fantastic-images
 
-Ferramenta para gerar imagens.
+Ferramenta opinada para gerar imagens.
+
+## Instalaçao
+
+```sh
+npm i @fantastic-images/core fabric@4.2.0
+```
 
 ## Dependências
 
