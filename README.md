@@ -6,7 +6,7 @@ Ferramenta para gerar imagens.
 
 - [fabric.js](https://github.com/fabricjs/fabric.js)
 
-  - `npm install fabric` para a versão completa (instala + dependências).
+  - `npm install fabric` para a versão completa.
 
   - `npm install fabric@4.2.0-browser` para a versão para navegadores (leve para navegadores).
 
@@ -21,7 +21,7 @@ Ferramenta para gerar imagens.
   <summary>Validar template</summary>
 
 ```ts
-import { isValidTemplate } from "@fantastic-images/core/lib/fabric/template";
+import { Template } from "@fantastic-images/core";
 
 const template = {
   model: {
@@ -36,7 +36,7 @@ const template = {
   },
 };
 
-isValidTemplate(tempalte);
+Template.isValidTemplate(template);
 ```
 
 </details>
@@ -46,7 +46,7 @@ isValidTemplate(tempalte);
 
 ```ts
 import { fabric } from "fabric";
-import { canvasByDom } from "@fantastic-images/core/lib/fabric/canvas";
+import { FabricCanvasByDom } from "@fantastic-images/core";
 
 const template = {
   model: {
@@ -63,7 +63,9 @@ const template = {
 
 const wrapper = document.getElementById("wrapper");
 
-const canvas = canvasByDom(fabric)(window.document)(wrapper)(template);
+const getCanvas = FabricCanvasByDom.getCanvas(fabric)(window.document)(wrapper);
+
+const canvas = getCanvas(template);
 ```
 
 </details>
@@ -73,10 +75,7 @@ const canvas = canvasByDom(fabric)(window.document)(wrapper)(template);
 
 ```ts
 import { fabric } from "fabric";
-import {
-  canvasByDom,
-  renderTemplate,
-} from "@fantastic-images/core/lib/fabric/canvas";
+import { FabricCanvasByDom, renderTemplate } from "@fantastic-images/core";
 
 const template = {
   model: {
@@ -93,7 +92,9 @@ const template = {
 
 const wrapper = document.getElementById("wrapper");
 
-const canvas = canvasByDom(fabric)(window.document)(wrapper)(template);
+const getCanvas = FabricCanvasByDom.getCanvas(fabric)(window.document)(wrapper);
+
+const canvas = getCanvas(template);
 
 await renderTemplate(fabric)(canvas)(template);
 ```
