@@ -24,7 +24,7 @@
   "scripts": {
     "dev": "pnpm run dev:watch",
     "dev:watch": "tsc -p . --declaration --watch",
-    "clean": "rm -rf lib",
+    "clean": "rm -rf dist",
     "prod:build": "tsc -p . --declaration",
     "build": "pnpm run clean && pnpm run prod:build",
     "prepare": "pnpm run build"
