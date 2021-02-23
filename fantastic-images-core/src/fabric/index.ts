@@ -1,4 +1,8 @@
-export * as canvas from "./canvas";
-export * as objects from "./objects";
-export * as staticRelated from "./static";
-export * as template from "./template";
+export * from "./FabricCanvas";
+export * from "./FabricCanvasByDom";
+export * from "./FabricObjects";
+export * from "./FabricStatic";
+export * from "./static/buildStatic";
+export * from "./Template";
+export * from "./template/renderTemplate";
+export * from "./TemplateSchema";

@@ -1,12 +1,12 @@
 import { Image } from "fabric/fabric-impl";
-import { ITemplate } from "../../../types/ITemplate";
-import { ITemplateStaticImage } from "../../../types/ITemplateStaticImage";
-import { imageFromURL } from "../../objects/image-from-url";
+import { ITemplate } from "../../types/ITemplate";
+import { ITemplateStaticImage } from "../../types/ITemplateStaticImage";
+import { FabricObjects } from "../FabricObjects";
 
 export const buildStatic = (fabric: any) => (template: ITemplate) => async (
   url: ITemplateStaticImage["url"]
 ): Promise<Image> => {
-  const img = await imageFromURL(fabric)(url);
+  const img = await FabricObjects.imageFromURL(fabric)(url);
   if (!img) return img;
   const {
     model: { sketch },

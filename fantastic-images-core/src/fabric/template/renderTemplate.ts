@@ -1,9 +1,9 @@
 import { Canvas, Object as FabricObject } from "fabric/fabric-impl";
-import { ITemplate } from "../../../types/ITemplate";
-import { buildObject } from "../../objects/build-object";
-import { buildStatic } from "../../static/build-static";
-import { getStaticFromTemplate } from "../../static/get-static-from-template";
-import { removeAllObjects } from "../remove-all-objects";
+import { ITemplate } from "../../types/ITemplate";
+import { FabricObjects } from "../FabricObjects";
+import { buildStatic } from "../static/buildStatic";
+import { FabricStatic } from "../FabricStatic";
+import { FabricCanvas } from "../FabricCanvas";
 
 export const renderTemplate = (fabric: any) => (canvas: Canvas) => async (
   template: ITemplate,
@@ -11,10 +11,10 @@ export const renderTemplate = (fabric: any) => (canvas: Canvas) => async (
 ): Promise<void> => {
   const { model } = template;
   const { fabricExported } = model;
-  const GetStatic = getStaticFromTemplate(template);
+  const GetStatic = FabricStatic.getStaticFromTemplate(template);
   const BuildStatic = buildStatic(fabric)(template);
-  const BuildObject = buildObject(fabric);
-  clearCanvas && removeAllObjects(canvas);
+  const BuildObject = FabricObjects.buildObject(fabric);
+  clearCanvas && FabricCanvas.removeAllObjects(canvas);
   await Promise.all([
     Promise.all(GetStatic("back").map(({ url }) => BuildStatic(url))),
     Promise.all(fabricExported.objects.map((obj: any) => BuildObject(obj))),
